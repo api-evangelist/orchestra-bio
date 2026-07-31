@@ -1,22 +1,67 @@
 aid: orchestra-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/orchestra-bio.png
 name: Orchestra Bio
-description: Orchestra Bio is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Orchestra (orchestra.bio) is an agentic operations platform for drug
+  development and life sciences R&D organizations, helping teams unify planning
+  across leadership, programs, and scientific groups, automate R&D workflows,
+  and reduce the operational risks that derail breakthrough science. The
+  San Francisco company pairs unified program roadmaps with intelligent
+  operations and decision support, and is backed by Andreessen Horowitz (a16z),
+  8VC, Haystack, and other investors. It was added to the API Evangelist network
+  as an a16z portfolio company. As of this enrichment pass Orchestra publishes a
+  product marketing site, a company blog, and a hosted web application, but no
+  public developer API, OpenAPI, SDK, or documentation surface.
 url: https://raw.githubusercontent.com/api-evangelist/orchestra-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - a16z
+- 8VC
+- Haystack
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Life Sciences
+- Biotech
+- Drug Development
+- R&D Operations
+- Agentic AI
+- SaaS
 apis: []
+common:
+- type: DomainSecurity
+  url: security/orchestra-bio-domain-security.yml
+- type: Website
+  url: https://orchestra.bio/
+- type: Blog
+  url: https://orchestra.bio/blog
+- type: Login
+  url: https://app.orchestra.bio/
+- type: Support
+  url: mailto:hello@orchestra.bio
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
